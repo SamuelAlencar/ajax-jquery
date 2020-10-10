@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang=pt-br>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ajax com Query</title>
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <script src="node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+</head>
+<style>
+    .loader {
+        display: none;
+        position: absolute;
+        z-index: 2;
+        background-color: rgba(0, 0, 0, 0.85);
+        width: 100%;
+        height: 100%;
+        align-items: center;
+        justify-content: center;
+    }
+    .loader img{
+        height: 300px
+    }
+    
+</style>
+
+<body>
+    <div class="loader">
+        <img src="https://media.giphy.com/media/OiC5BKaPVLl60/giphy.gif" alt="" srcset="">
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12">
+                <h3>Lista de cidades por estado</h3>
+                <!-- Inicio do formulario -->
+                <form method="get" action=".">
+                    <div class="form-group col-12">
+                        <div class="">
+                            <label for="Estados">Estado</label>
+                            <select class="form-control form-control-sm" id="estado">
+                                <option class="estado" value="Selecione o estado" placeholder="Selecione o estado">Selecione o estado
+                                </option>
+                                <option class="estado" value="AC">Acre</option>
+                                <option class="estado" value="AL">Alagoas</option>
+                                <option class="estado" value="AP">Amapá</option>
+                                <option class="estado" value="AM">Amazonas</option>
+                                <option class="estado" value="BA">Bahia</option>
+                                <option class="estado" value="CE">Ceará</option>
+                                <option class="estado" value="DF">Distrito Federal</option>
+                                <option class="estado" value="ES">Espírito Santo</option>
+                                <option class="estado" value="GO">Goiás</option>
+                                <option class="estado" value="MA">Maranhão</option>
+                                <option class="estado" value="MT">Mato Grosso</option>
+                                <option class="estado" value="MS">Mato Grosso do Sul</option>
+                                <option class="estado" value="MG">Minas Gerais</option>
+                                <option class="estado" value="PA">Pará</option>
+                                <option class="estado" value="PB">Paraíba</option>
+                                <option class="estado" value="PR">Paraná</option>
+                                <option class="estado" value="PE">Pernambuco</option>
+                                <option class="estado" value="PI">Piauí</option>
+                                <option class="estado" value="RJ">Rio de Janeiro</option>
+                                <option class="estado" value="RN">Rio Grande do Norte</option>
+                                <option class="estado" value="RS">Rio Grande do Sul</option>
+                                <option class="estado" value="RO">Rondônia</option>
+                                <option class="estado" value="RR">Roraima</option>
+                                <option class="estado" value="SC">Santa Catarina</option>
+                                <option class="estado" value="SP">São Paulo</option>
+                                <option class="estado" value="SE">Sergipe</option>
+                                <option class="estado" value="TO">Tocantins</option>
+                            </select>
+                            <label for="cidades">Cidades</label>
+                            <select class="form-control form-control-sm" id="cidades">
+                                <option> Selecione a cidade</option>
+                            </select>
+                        </div>
+
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
